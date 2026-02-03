@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+    <style>
+        body{
+            border: 1px solid gray;
+            width: 100%;
+            height: 100vh;
+            background-color: palegoldenrod;
+        }
+                
+        h1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            margin-top: 80px;
+        }
+
+        .contact{
+            max-width: 800px;
+            margin: 60px auto;/*00px auto--- auto는 가운데 정렬*/
+        }
+        .accordion{
+            list-style:none;/*ul의 점이 없어짐*/
+        }
+        .accordion li{
+            margin-bottom: 8px;
+        }
+        .accordion input{
+            display: none; /*input의 동그라미 없어짐*/
+        }
+        .accordion label{
+            background-color: rgba(116, 194, 116, 0.363);
+            cursor: pointer;
+            padding: 16px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .accordion label::after{
+            content: "+"; /*끝부분에 + 모양 만들어주기*/
+            font-size: 30px;
+            transition: 0.3s;
+        }
+        .accordion .content{
+            background: #a0d279;
+            padding: 0 16px;
+            /*숨겨있다가 서서히 나타날 부분 */
+            transition: 0.3s;
+            /*밖으로 삐져나오는 텍스트 숨김*/
+            overflow:hidden;
+            /*닫혀 있을 때 높이 0*/
+            max-height:0;
+        }
+        .accordion input:checked + label + .content{
+            max-height: 200px;
+            padding: 16px;
+        }
+        .accordion input:checked + label::after{
+            transform: rotate(45deg);
+        }
+        textarea{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width:95%;
+            height: auto;
+            font-size: 2rem;
+            padding: 0.3rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+    </style>
+</head>
+<body>
+    <section class="all">
+    <h1>CONTACT</h2>
+    <section class="contact">
+        <ul class="accordion">
+            <li>
+                <input type="radio" name="faq" id="q1">
+                <label for="q1">이름을 입력해주세요.</label>
+                <div class="content">                    
+                    <textarea name="contact info">NAME</textarea>                    
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="faq" id="q2">
+                <label for="q2">이메일을 입력해주세요.</label>
+                <div class="content">
+                    <textarea name="contact info">E-MAIL</textarea>   
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="faq" id="q3">
+                <label for="q3">메세지를 입력해 주세요.</label>
+                <div class="content">
+                    <textarea name="contact info">MESSAGE</textarea>   
+                </div>
+            </li>
+        </ul>
+    </section>
+    </section>
+</body>
+</html>
