@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>밤하늘</title>
+    <script src="https://kit.fontawesome.com/4ec79785b5.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            margin: 0;
+        }
+        section{
+            background: url(/20260129_webpage/images/nightsky.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            opacity: 0.87;
+        }
+        nav{
+            background-color: royalblue;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            opacity: 0.8;
+        }
+        .logo{
+            display: flex;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+        }
+        li{
+            padding: 0 30px;
+            text-decoration: none;
+            color: aliceblue;
+            font-weight: 600;            
+        }
+        li:hover{
+            color: darkmagenta;
+        }
+        .first{
+            padding: 30px;
+        }
+        .first{
+            top: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute; /*없으니 애니메이션이 움직이지 않음*/
+            animation: moveIn 8s ease-in-out alternate infinite
+        }
+        .first span{
+            color: lightblue;
+            font-size: 50px;
+            font-weight: bold;
+        }
+        .first img{
+            height: 100px;
+            width: 150px;
+            border-radius: 50%;            
+        }
+        @keyframes moveIn{
+            from{
+                right:-15%;
+                opacity:0;
+            }to{
+                right:45%;
+                opacity:1;
+            }
+        }
+        @media screen and (max-width: 768px){
+            nav{
+                height: 170px;
+                align-items: flex-start;
+            }
+            .navbar ul{
+                flex-direction: column;
+            }
+            .navbar ul{
+                line-height: 1.8;
+            }            
+        }
+        .footer{
+            display: flex;
+            justify-content: center;
+            padding: 20px 30px;
+        }
+        .footer-icons{
+            display: flex;
+            gap: 30px;
+        }
+        .footer-icons i{
+            font-size: 30px;
+            color: darkslategrey;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <nav>
+            <div class="logo">
+                <h1>&nbsp;ASTRONOMY&nbsp;</h1>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="observation.html">OBSERVATION</a></li>
+                    <li><a href="data.html">DATA</a></li>
+                    <li><a href="q&a.html">Q&A</a></li>
+                    <li><a href="others.html">OTHERS</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="first">
+            <span> STARS EVERYWHERE </span><br>
+            <img src="/20260129_webpage/images/천문대 이미지.jpg">
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-icons">
+            <i class="fa-solid fa-envelope"></i>
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <i class="fa-solid fa-location-arrow"></i>
+        </div>   
+    </footer>
+</body>
+</html>

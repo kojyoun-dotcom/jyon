@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        section{
+            border: 1px solid gray;
+            background-color: blanchedalmond;
+
+        }
+        .container{
+            display: flex;
+            flex-direction: column;            
+        }
+        .box{
+            background-color: white;
+            border-radius: 5%;
+            height: 250px;
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            font-size: large;          
+            border: 1px solid gray;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        @media (min-width:768px){
+            .container{
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .box{
+                width:50%
+            }
+        }
+        @media (min-width:1024px){
+            .container{
+                flex-direction: row;
+            }
+            .box{
+                width:20%
+            }    
+        }
+        .p1{
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .p2{
+            color: gray;
+            font-size: 18px;
+        }
+        .p3{
+            color: skyblue;
+            font-size: 15px;
+        }
+        .p4{
+            color: skyblue;
+            font-size: 20px;
+        }       
+
+    </style>
+</head>
+<body>
+    <section>
+    <div class="container">
+        <div class="box">
+        <p class="p1">아낌e-보금자리론</p>
+                <p class="p2">더 저렴한 금리</p>
+                <p class="p3">최대</p>
+                <p class="p4">주택가격 6억원</p>
+                <img src="/images/아낌e.png" width="100"></div>
+        <div class="box">
+        <p class="p1">u-보금자리론</p>
+                <p class="p2"> 가족의 소중한 보금자리 마련</p>
+                <p class="p3">최대</p>
+                <p class="p4">대출한도 3.6억원</p>
+                <img src="/images/u-보금자리.png" width="100"></div>
+        <div class="box">
+                <p class="p1">내집마련 디딤돌</p>
+                <p class="p2">내집마련 꿈의 실현</p>
+                <p class="p3">무주택 세대주 대상</p>
+                <p class="p4">저금리<br>주택구입자금대출</p>
+                <img src="/images/디딤돌.png" width="100">
+        </div>
+    </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;            /* item을 나란히 */
+            flex-direction: column;    /* item을 세로로 */
+
+        }
+        .item{
+            border: 2px solid lightgreen; /*solid가 있어야지 보임, 굵기,스타일, 색상이 세트로*/
+            color: black;
+            padding: 10px;                 /* 안쪽여백 */
+            margin: 5px;                   /* 바깥쪽 여백 */
+            text-align:start;            /* 글자 정렬 */
+            font-size: medium;                    
+        }
+        /*태블릿*/
+        @media (mid-width: 768px){
+            .container{
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .item{
+                width: 50%;
+            }
+        }
+        /*PC*/
+        @media (min-width: 1024px){
+            .container{
+                flex-direction: row;                
+            }
+            .item{
+                width:30%;
+            }
+        }
+        .box{
+            background-color: lightgray;
+            padding: 50px;
+            align-items: start;
+            justify-content: center;
+        }    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"> 
+            <div class="box"></div>      <!-- /*div안에는 순서대로 작성하면 그대로 보임*/ -->
+            상품1
+        </div>
+        <div class="item">
+            <div class="box"></div>
+            상품2
+        </div>        
+        <div class="item">
+            <div class="box"></div>
+            상품3
+        </div>
+    </div>
+</body>
+</html>
