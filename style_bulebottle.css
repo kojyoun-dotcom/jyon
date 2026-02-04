@@ -30,7 +30,7 @@ a:hover{
 }
 /* 메인부분시작 */
 main{
-    background-image: url(/images/라떼아트.png);
+    background-image: url(./images/라떼아트.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
@@ -70,4 +70,5 @@ footer a img{
 }
 .fa-brands{
     font-size: 30px;
+
 }
