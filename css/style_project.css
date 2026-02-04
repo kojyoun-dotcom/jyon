@@ -52,7 +52,7 @@ main{
     margin: 0;
 }
 .proj-list h3{
-    color: green;
+    color: #3f191a;
     font-size: 25px;
     font-weight: 600;
 }
@@ -100,4 +100,5 @@ footer{
         min-width:0;
         margin: 0;
     }
+
 }
