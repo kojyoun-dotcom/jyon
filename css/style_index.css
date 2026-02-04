@@ -18,7 +18,7 @@ header{
     margin: 0;
     width: 100%;
     height: 60px;
-    background-color: rgba(116, 194, 116, 0.363);
+    background-color: #B6AE9F;
     display: flex;
     justify-content: space-between;
     z-index: 100;
@@ -33,7 +33,7 @@ header{
 nav{
     /* display: none; */
     display: block;
-    background: green;
+    background: #FBF3D1;
     opacity: 0.7;
     position: fixed;
     top:60px; /*logo 아래 내려오도록 되는*/
@@ -50,7 +50,8 @@ nav.is-open{
     margin-bottom: 8px;
  }
  nav a{
-    color: white;
+    color: rgb(59, 21, 21);
+    font-weight: 800;
  }
  .menu-toggle-btn{
     width:2rem;
@@ -63,12 +64,12 @@ nav.is-open{
  .menu-toggle-btn span{
     display: block;
     height: 2px;
-    background: rgb(34, 88, 34);
+    background: brown;
     margin-bottom: 4.5px;
     margin-top: 4.5px;
  }
  .container{
-    background: url(../images/forest.jpg) center center no-repeat;
+    background: url(../images/background.webp) center center no-repeat;
     background-size: cover;
     opacity: 0.7;
     width: 100%;
@@ -78,13 +79,23 @@ nav.is-open{
     justify-content: center;
     align-items: center;
  }
+
  h2, p{
     display: block;
     font-size: 80px;
     font-weight: bold;
     align-items: center;
-    color: white;
+    color:#FBF3D1;
+    animation: anima 3s;
+
  }
+ @keyframes anima {
+    from{
+        transform: translate(-500px)}
+ }to{
+    transform: translate(0);
+    }
+
  p{
     font-size: 50px;
  }

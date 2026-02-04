@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 헤더부분시작 */
+header{
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: gray;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav a{
+    padding: 15px;
+}
+a:hover{
+    color: #01a1dd;
+    background-color: aliceblue;
+}
+.logo{
+    margin-left: 30px;
+}
+.logo img{
+    width: 60px;
+}
+/* 메인부분시작 */
+main{
+    background-image: url(/images/라떼아트.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    margin-bottom: 30px;
+}
+.ment1{
+    position: relative;
+    top: 300px;
+    left: 45px;
+    font-size: 1em;
+    /* 부모에서 다른 사이즈를 주었으면 비율이 달라질 수 있음 기본이 16px은 1em */
+    color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ment2{
+    position: relative;
+    top: 295px;
+    left:45px;
+    font-size: 3em;
+    color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    position: relative;
+    top: 300px;
+    left: 45px;
+    background-color: #01a1dd;
+    border: 0;
+    padding: 5px 24px; /* 안쪽여백 */
+    font-weight: 400; /* 글자두께 */
+    cursor: pointer;
+}
+
+/* 푸터부분시작 */
+footer{
+    color: gray;
+    font-weight: 600; 
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    padding: 10px 50px
+}
+fotter a img{
+    width: 20px;
+}
+.fa-brands{
+    font-size: 30px;
+}

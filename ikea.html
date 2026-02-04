@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ikea_tab button</title>
+    <style>
+        body{
+            background: url(https://www.ikea.com/ext/ingkadam/m/750da69b06947b7d/original/PH177987-crop001.jpg?f=xl);
+            width: 900px;
+            height: 1198px;
+        }
+        section{
+            position: relative;
+        }
+        input{
+            position:relative;
+        }    
+        #btn1{
+            top: 220px;
+            left:170px;
+        }
+        #btn2{
+            top:420px;
+            left:400px;
+        }
+        #btn3{
+            top: 500px;
+            left: 550px;
+        }
+        #btn4{
+            top: 600px;
+            left: 600px;
+        }
+        .tooltipContent1{
+            position: absolute;
+            text-align: center;
+            width: 150px;
+            height: 100px;
+            background: lightgoldenrodyellow;            
+            border: 2px solid yellowgreen;
+            border-radius: 10px;
+            line-height: 0.7;/*줄간격*/   
+            top: 180px;
+            left:200px;
+            display: none;
+        }
+        .tooltipContent2{
+            position: absolute;
+            text-align: center;
+            width: 150px;
+            height: 100px;
+            background: lightgoldenrodyellow;            
+            border: 2px solid yellowgreen;
+            border-radius: 10px;
+            line-height: 0.7;
+            top: 320px;
+            left:360px;
+            display: none;
+        }
+        .tooltipContent3{
+            position: absolute;
+            text-align: center;
+            width: 150px;
+            height: 100px;
+            background: lightgoldenrodyellow;            
+            border: 2px solid yellowgreen;
+            border-radius: 10px;
+            line-height: 0.7;
+            top: 400px;
+            left:530px;
+            display: none;
+        }
+        .tooltipContent4{
+            position: absolute;
+            text-align: center;
+            width: 150px;
+            height: 100px;
+            background: lightgoldenrodyellow;            
+            border: 2px solid yellowgreen;
+            border-radius: 10px;
+            line-height: 0.7;
+            top: 560px;
+            left:520px;
+            display: none;
+        }
+
+        #btn1:checked~ #content1,
+        #btn2:checked~ #content2,
+        #btn3:checked~ #content3,
+        #btn4:checked~ #content4{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+    <input type="radio" name="btn-group" id="btn1" checked>
+    <div id="content1" class="tooltipContent1">
+        <h3>EKET</h3>
+        <p class="product content">Cabinet, white</p>
+        <p class="product price">￦25,000</p>
+    </div>
+    </input>
+    <input type="radio" name="btn-group" id="btn2">
+    <div id="content2" class="tooltipContent2">
+        <h3>NYMÅNE</h3>
+        <p class="product content">Work lamp</p>
+        <p class="product price">￦59,900</p>
+    </div>
+    <input type="radio" name="btn-group" id="btn3">
+    <div id="content3" class="tooltipContent3">
+        <h3>SKÅDIS</h3>
+        <p class="product content">Pegboard</p>
+        <p class="product price">￦20,900</p>
+    </div>
+    <input type="radio" name="btn-group" id="btn4">
+    <div id="content4" class="tooltipContent4">
+        <h3>FLINTAN</h3>
+        <p class="product content">Office chair</p>
+        <p class="product price">￦100,000</p>
+    </div>
+    </section>
+</body>
+</html>

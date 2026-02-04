@@ -6,13 +6,21 @@
     <title>CONTACT</title>
     <style>
         body{
-            border: 1px solid gray;
             width: 100%;
             height: 100vh;
-            background-color: palegoldenrod;
+            background-color:#E2E8CE;
         }
+        .top{
+            margin: 7px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            height: 120px;
+            background-color: #B6AE9F;
+            }
                 
-        h1{
+        button{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -23,30 +31,45 @@
         .contact{
             max-width: 800px;
             margin: 60px auto;/*00px auto--- auto는 가운데 정렬*/
+            display: flex;
+            flex-direction: column;
+        }
+        .contact button:hover{
+            background-color: #B6AE9F;
+            cursor: pointer;
+            transform: scale(1.1);
         }
         .accordion{
             list-style:none;/*ul의 점이 없어짐*/
+
         }
         .accordion li{
             margin-bottom: 8px;
+            border:1px solid #CDB885;
+            border-radius: 10px;
+        }
+        .accordion li:hover{
+            cursor: pointer;
+            transform: scale(1.01);
         }
         .accordion input{
             display: none; /*input의 동그라미 없어짐*/
         }
         .accordion label{
-            background-color: rgba(116, 194, 116, 0.363);
+            background-color: #E8D1C5;
+            opacity: 0.7;
             cursor: pointer;
             padding: 16px;
             display: flex;
             justify-content: space-between;
         }
         .accordion label::after{
-            content: "+"; /*끝부분에 + 모양 만들어주기*/
+            content: "➕"; /*끝부분에 + 모양 만들어주기*/
             font-size: 30px;
             transition: 0.3s;
         }
         .accordion .content{
-            background: #a0d279;
+            background: #F3E8DF;
             padding: 0 16px;
             /*숨겨있다가 서서히 나타날 부분 */
             transition: 0.3s;
@@ -68,40 +91,52 @@
             align-items: center;
             width:95%;
             height: auto;
-            font-size: 2rem;
+            font-size: 1rem;
             padding: 0.3rem;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+        }
+        .contact button{
+            border: 1px solid #B6AE9F;            
+            border-radius: 5px;            
+            background-color: beige;
+            padding: 1rem;
+            font-size: 18px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 70%;
+            height: auto;
+            margin-left: 150px;
+        }
     </style>
 </head>
 <body>
-    <section class="all">
-    <h1>CONTACT</h2>
-    <section class="contact">
+    <div class="top">
+        <h1>CONTACT</h2>
+    </div>
+    <form class="contact">
         <ul class="accordion">
             <li>
-                <input type="radio" name="faq" id="q1">
+                <input type="checkbox" name="faq" id="q1">
                 <label for="q1">이름을 입력해주세요.</label>
                 <div class="content">                    
                     <textarea name="contact info">NAME</textarea>                    
                 </div>
             </li>
             <li>
-                <input type="radio" name="faq" id="q2">
+                <input type="checkbox" name="faq" id="q2">
                 <label for="q2">이메일을 입력해주세요.</label>
                 <div class="content">
                     <textarea name="contact info">E-MAIL</textarea>   
                 </div>
             </li>
             <li>
-                <input type="radio" name="faq" id="q3">
+                <input type="checkbox" name="faq" id="q3">
                 <label for="q3">메세지를 입력해 주세요.</label>
                 <div class="content">
                     <textarea name="contact info">MESSAGE</textarea>   
                 </div>
             </li>
         </ul>
-    </section>
-    </section>
+        <button type="submit">SEND</button>
+    </form>
 </body>
 </html>
